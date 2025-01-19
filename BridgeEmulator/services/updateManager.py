@@ -104,9 +104,4 @@ def githubInstall():
     pass
 
 def startupCheck():
-    if bridgeConfig["config"]["swupdate2"]["install"] == True:
-        bridgeConfig["config"]["swupdate2"]["install"] = False
-        bridgeConfig["config"]["swupdate2"]["lastchange"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")
-        bridgeConfig["config"]["swupdate2"]["bridge"]["lastinstall"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")
-    versionCheck()
-    githubCheck()
+    pass
